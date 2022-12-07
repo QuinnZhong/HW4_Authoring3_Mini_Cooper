@@ -1,0 +1,44 @@
+{
+    "CaptAmerica": {
+        "name": "Cooper",
+        "id": "cooper",
+        "lbBG": "Cap_LB_Bg.png",
+        "carpic": "cap.jpeg",
+        "detail": "replace with live text"
+    },
+    "CaptMarvel": {
+        "name": "Cooper S",
+        "id": "coopers",
+        "lbBG": "CapMarvel_LB_Bg.png",
+        "carpic": "carol.jpeg",
+        "detail": "replace with live text"
+    },
+    "Hawkeye": {
+        "name": "John Cooper Works ",
+        "id": "johncooperworks",
+        "lbBG": "CapMarvel_LB_Bg.png",
+        "carpic": "clint.jpeg",
+        "detail": "replace with live text"
+    },
+    "Hulk": {
+        "name":"Cooper SE 3 door ",
+        "id":"cooperse3door",
+        "lbBG": "CapMarvel_LB_Bg.png",
+        "carpic":"hulk.jpeg",
+        "detail": "replace with live text"
+    },
+    "Thor": {
+        "name":"THE ALL-ELECTRIC MINI COOPER SE 3 DOOR",
+        "id":"electronicone",
+        "lbBG": "Thor_LB_Bg.png",
+        "carpic":"thor.jpeg",
+        "detail": "replace with live text"
+    },
+    "Widow": {
+        "name":"THE MINI COOPER SE COUNTRYMAN ALL4 PHEV ",
+        "id":"electronictwo",
+        "lbBG": "Thor_LB_Bg.png",
+        "carpic":"widow.jpeg",
+        "detail": "replace with live text"
+    }
+  }
