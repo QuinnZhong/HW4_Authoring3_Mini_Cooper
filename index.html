@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Characters Team Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="hidden">Mini cars</h1>
+        <img id="main-logo" src="images/Mini-logo-2015-1920x1080.png" alt="mini logo">
+            <h1 class="hidden">All About the Team</h1>
+    </header>
+
+    <main id="app">
+        <nav id="character-nav">
+            <ul class="characters">
+                <!-- hero thumb component goes here -->
+                <theherothumb @loadlbdata="loadLightbox" v-for="hero in heroData" :hero="hero"></theherothumb>
+            </ul>
+        </nav>
+
+        <article>
+            <h3>INNOVATION MADE SEAMLESS.</h3>
+            <p>MINI's premium cockpit technology makes your motoring experience as convenient as it is thrilling. Thoughtfully designed with our drivers in mind, our technology integrates a host of innovative infotainment apps and intelligent services into an easy-to-use 6.5” or 8.8” Touchscreen interface, positioned in the centre of the dash. So no matter where you are, or where the road takes you, you'll always have a seamless connection to the world around you - right at your beck-and-call.</p>
+        </article>
+
+        <!-- custom lightbox component goes here -->
+        <thelightbox @closelightbox="this.showLB=false" v-if="showLB" :item="lbData"></thelightbox>
+        <!-- end lightbox -->
+        <article>
+            <h3>INTERIOR.</h3>
+        </article>
+        <div class="interior">
+        <div class="item">
+          <span>NEW HEATED STEERING WHEEL.</span>
+          <span class="mini_design"></span>
+          <div class="overlay"></div>
+        </div>
+        <div class="alt">
+          <span>REFINED NEW DESIGN.</span>
+          <span class="mini_design"></span>
+          <div class="overlay"></div>
+        </div>
+        <div class="item">
+          <span>DIGITAL INSTRUMENT DISPLAY.</span>
+          <span class="mini_design"></span>
+          <div class="overlay"></div>
+        </div>
+        <div class="item">
+          <span>8.8" TOUCHSCREEN DISPLAY.</span>
+          <span class="mini_design"></span>
+          <div class="overlay"></div>
+        </div>
+        <div class="item">
+          <span>MULTI-FONCTIONAL BUTTONS</span>
+          <span class="mini_design"></span>
+          <div class="overlay"></div>
+        </div>
+        <div class="alt">
+          <span>MODERN DISPLAY</span>
+          <span class="mini_design"></span>
+          <div class="overlay"></div>
+        </div>
+        <div class="alt">
+          <span>HIGH GLOSS BLACK FINISH</span>
+          <span class="mini_design"></span>
+          <div class="overlay"></div>
+        </div>
+        <div class="alt">
+          <span>SIMPLE TAPS.</span>
+          <span class="mini_design"></span>
+          <div class="overlay"></div>
+        </div>
+        <div class="alt">
+          <span>AMBIENT LIGHTING</span>
+          <span class="mini_design"></span>
+          <div class="overlay"></div>
+        </div>
+        <div class="item alt">
+          <span>SLEEK PIANO BLACK PANEL</span>
+          <span class="mini_design"></span>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </main>
+
+    
+    <!-- make this a sticky footer so it's always at the bottom-->
+    <footer class="sticky_footer">
+        <h3>All Images &copy; MINI Canada</h3>
+    </footer>
+    
+    <!-- load script tags at the bottom -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main.js" type="module" defer></script>
+</body>
+</html>
